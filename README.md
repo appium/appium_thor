@@ -1,4 +1,5 @@
-# appium_thor
+# appium_thor [![Gem Version](https://badge.fury.io/rb/appium_thor.svg)](http://badge.fury.io/rb/appium_thor)[![Dependency Status](https://gemnasium.com/appium/appium_thor.svg)](https://gemnasium.com/appium/appium_thor)
+
 
 Appium Thor helpers for appium's gems (appium_lib, appium_capybara)
 
