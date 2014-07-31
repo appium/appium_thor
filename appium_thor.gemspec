@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/appium/appium_thor'
   s.require_paths = ['lib']
 
-  s.add_runtime_dependency 'redcarpet', '~> 3.1.2'
+  s.add_runtime_dependency 'redcarpet', '~> 3.1', '>= 3.1.2'
   s.add_runtime_dependency 'posix-spawn', '~> 0.3', '>= 0.3.8'
   s.add_runtime_dependency 'yard', '~> 0.8', '>= 0.8.7.4'
 
