@@ -1,5 +1,3 @@
-require_relative 'init'
-
 # Define Thor tasks in the top level Default namespace.
 class Default < Thor
   desc 'info', 'prints config info for this gem'
@@ -63,7 +61,7 @@ class Default < Thor
     update_release_notes
   end
 
-  desc 'byte', 'Remove non-ascii bytes'
+  desc 'byte', 'Remove non-ascii bytes from all *.rb files in the current dir'
   def byte
     remove_non_ascii_from_cwd
   end

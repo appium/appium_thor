@@ -1,16 +1,20 @@
 module Appium
   module Thor
     module Helpers
+      # Sets the permissions on the gem credentials
+      # Runs gem build gemspec
       def _build_gem
         `chmod 0600 ~/.gem/credentials`
         sh "gem build #{gem_name}.gemspec"
       end
 
+      # Returns true if the tag exists on the master branch.
       def tag_exists tag_name
         cmd = %Q(git branch -a --contains "#{tag_name}")
         POSIX::Spawn::Child.new(cmd).out.include? '* master'
       end
 
+      # Runs command. Raises an exception if the command doesn't execute successfully.
       def sh command
         process = POSIX::Spawn::Child.new command
 
@@ -22,14 +26,23 @@ module Appium
         out ? out.strip : out
       end
 
+      # Used to parse the version number from version_file
       def version_rgx
         /\s*VERSION\s*=\s*'([^']+)'/m
       end
 
+      # Returns the version number from version_file as a string
       def version
         @version ||= File.read(version_file).match(version_rgx)[1]
       end
 
+      # Updates the date and version in version_file.
+      # Prints the new version and date to the console.
+      # The date is not printed if it hasn't changed.
+      #
+      # x.y.z
+      #
+      # @param value [symbol] value is either :x, :y, or :z. Default is z.
       def _bump value
         data = File.read version_file
 
@@ -68,6 +81,8 @@ module Appium
         File.write version_file, data
       end
 
+      # Creates release_notes.md based on changes between tags.
+      # Note that the first tag won't contain notes.
       def update_release_notes
         tag_sort = ->(tag1, tag2) do
           tag1_numbers = tag1.match(/\.?v(\d+\.\d+\.\d+)$/)[1].split('.').map! { |n| n.to_i }
@@ -118,21 +133,29 @@ module Appium
         File.open('release_notes.md', 'w') { |f| f.write notes.to_s.strip }
       end
 
+      # Installs the local gem. It's fast due to the flags
+      #
+      # --no-rdoc = skip rdoc
+      # --no-ri   = skip ri
+      # --local   = only install from the local disk
       def _install
         _build_gem
         _uninstall
         sh "gem install --no-rdoc --no-ri --local #{gem_name}-#{version}.gem"
       end
 
+      # Uninstalls all versions of the gem
       def _uninstall
         cmd = "gem uninstall -aIx #{gem_name}"
-        # rescue on gem not installed error.
-        begin
-          sh "#{cmd}"
-        rescue
-        end
+        # rescue from errors. avoids gem not installed error.
+        sh "#{cmd}" rescue nil
       end
 
+      # Publishes the master branch to github
+      # Creates a version tag
+      # Updates release notes and documentation
+      # Builds the gem
+      # Publishes the gem to rubygems
       def _publish
         unless `git branch`.include? '* master'
           puts 'Master branch required to release.'
