@@ -1,6 +1,7 @@
 # stdlib
 require 'forwardable' # commands.rb
 require 'singleton'   # config.rb
+require 'fileutils'
 
 # gems
 require 'rubygems'

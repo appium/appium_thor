@@ -51,9 +51,9 @@ class Default < Thor
     _install
   end
 
-  desc 'docs', 'Update android and iOS docs'
+  desc 'docs', 'Update docs'
   def docs
-    docks_block.call if docs_block
+    instance_eval &docs_block if docs_block
   end
 
   desc 'notes', 'Update release notes'

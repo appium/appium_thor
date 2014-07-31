@@ -55,6 +55,7 @@ module Appium
         YARD::Registry.clear
         puts "Globbing: #{globs}"
         puts "Writing: #{out_file}"
+        FileUtils.mkdir_p File.dirname out_file
         YARD::Parser::SourceParser.parse globs
         File.open(out_file, 'w') do |file|
           entries        = YARD::Registry.entries
