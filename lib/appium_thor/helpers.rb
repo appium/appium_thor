@@ -107,7 +107,7 @@ module Appium
             # use first 7 chars to match GitHub
             comment = line.gsub(hex, '').strip
             next if comment == 'Update release notes'
-            new_data += "- [#{hex[0...7]}](https://github.com/appium/#{gh_name}/commit/#{hex}) #{comment}\n"
+            new_data += "- [#{hex[0...7]}](https://github.com/appium/#{github_name}/commit/#{hex}) #{comment}\n"
           end
           data  = new_data + "\n"
 
