@@ -26,7 +26,7 @@ module Appium
 
         method_path = obj.file.split('/lib/').last
         os          = method_path.downcase.match /ios|android/
-        out         += "##### [#{obj.name.to_s}](https://github.com/appium/ruby_lib/blob/#{last_sha}/lib/#{method_path}#L#{obj.line}) #{os}\n\n"
+        out         += "##### [#{obj.name.to_s}](https://github.com/appium/#{github_name}/blob/#{last_sha}/lib/#{method_path}#L#{obj.line}) #{os}\n\n"
         out         += "> #{obj.signature}\n\n"
         out         += "#{obj.docstring}\n\n"
 
