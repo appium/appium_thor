@@ -1,3 +1,11 @@
+#### v0.0.6 2014-07-31
+
+- [b6659a4](https://github.com/appium/appium_thor/commit/b6659a4ea55c99cf68707f75d02ef29062760a00) Release 0.0.6
+- [4650a68](https://github.com/appium/appium_thor/commit/4650a68713b0f7937cf3be6f96e06916c0f78bb4) Fix docs link
+- [1586f47](https://github.com/appium/appium_thor/commit/1586f4789aa8db3284f8f274eaf57b50f94f6d0e) Fix thor docs
+- [938f87e](https://github.com/appium/appium_thor/commit/938f87ea1bd081297af0b1e94e427409f0e3c9d0) Update README.md
+
+
 #### v0.0.5 2014-07-31
 
 - [1934e8f](https://github.com/appium/appium_thor/commit/1934e8f05cf7eb9b2c8e0da76eb1ebb895511f2f) Release 0.0.5
