@@ -22,7 +22,7 @@ end
 
 # Available tasks
 
-Note to see gem warnings, run `gem build appium_thor.gemspec` and replace `appium_thor.gemspec` with the gemspec of your gem.
+Note to see gem warnings, run `gem build your_gem_name.gemspec`
 
 ```
 thor build          # Build a new gem
