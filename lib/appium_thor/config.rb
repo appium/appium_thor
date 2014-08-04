@@ -26,7 +26,17 @@ module Appium
         @docs_block = block
       end
 
-      %w[gem_name github_name github_owner version_file].each do |option|
+      # Returns all options as symbols. Required for defining delegators in init.rb
+      def options
+        string_options + [:docs_block]
+      end
+
+      # the subset of options that operate on strings
+      def string_options
+        %w[gem_name github_name github_owner version_file].map(&:to_sym)
+      end
+
+      string_options.each do |option|
         class_eval %Q(
          def #{option} string=nil
           return @#{option} if @#{option}

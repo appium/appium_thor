@@ -25,7 +25,7 @@ end
           --:|:--
 gem_name     | must be provided
 github_owner | `appium`
-github_name  | gem_name
+github_name  | `#{gem_name}`
 version_file | `lib/#{gem_name}/version.rb`
 docs_block   | no docs are generated
 
