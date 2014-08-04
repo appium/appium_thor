@@ -4,7 +4,16 @@ module Appium
       include Singleton
 
       # Returns true if all options are truthy
-      def validate
+      def init_and_validate
+        # set default values
+        if @gem_name
+          @github_name  ||= @gem_name
+          @version_file ||= "lib/#{@gem_name}/version.rb"
+        end
+
+        @github_owner ||= 'appium'
+
+        # ensure all options are set
         all_set = @gem_name && @github_name && @github_owner && @version_file
         raise 'Must set gem_name, github_name, github_owner, version_file' unless all_set
         raise "version file doesn't exist #{@version_file}" unless File.exist?(@version_file)
@@ -37,7 +46,7 @@ module Appium
       def self.set &block
         config = self.instance
         config.instance_eval &block
-        config.validate
+        config.init_and_validate
         config
       end
     end # module Config
