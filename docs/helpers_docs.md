@@ -1,4 +1,4 @@
-##### [_build_gem](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L6) 
+##### [_build_gem](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L6) 
 
 > def _build_gem
 
@@ -7,7 +7,7 @@ Runs gem build gemspec
 
 --
 
-##### [tag_exists](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L12) 
+##### [tag_exists](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L12) 
 
 > def tag_exists tag_name
 
@@ -15,7 +15,7 @@ Returns true if the tag exists on the master branch.
 
 --
 
-##### [sh](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L18) 
+##### [sh](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L18) 
 
 > def sh command
 
@@ -23,7 +23,7 @@ Runs command. Raises an exception if the command doesn't execute successfully.
 
 --
 
-##### [version_rgx](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L30) 
+##### [version_rgx](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L30) 
 
 > def version_rgx
 
@@ -31,7 +31,7 @@ Used to parse the version number from version_file
 
 --
 
-##### [version](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L35) 
+##### [version](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L35) 
 
 > def version
 
@@ -39,7 +39,7 @@ Returns the version number from version_file as a string
 
 --
 
-##### [_bump](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L46) 
+##### [_bump](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L46) 
 
 > def _bump value
 
@@ -55,7 +55,7 @@ __Parameters:__
 
 --
 
-##### [update_release_notes](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L86) 
+##### [update_release_notes](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L86) 
 
 > def update_release_notes
 
@@ -64,7 +64,7 @@ Note that the first tag won't contain notes.
 
 --
 
-##### [_install](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L141) 
+##### [_install](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L141) 
 
 > def _install
 
@@ -76,7 +76,7 @@ Installs the local gem. It's fast due to the flags
 
 --
 
-##### [_uninstall](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L148) 
+##### [_uninstall](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L148) 
 
 > def _uninstall
 
@@ -84,7 +84,7 @@ Uninstalls all versions of the gem
 
 --
 
-##### [_publish](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L159) 
+##### [_publish](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L159) 
 
 > def _publish
 
@@ -96,7 +96,7 @@ Publishes the gem to rubygems
 
 --
 
-##### [remove_non_ascii_from_cwd](https://github.com/appium/appium_thor/blob/b6659a4ea55c99cf68707f75d02ef29062760a00/lib/appium_thor/helpers.rb#L188) 
+##### [remove_non_ascii_from_cwd](https://github.com/appium/appium_thor/blob/e36ab29971eb4ccc0b5b4527f23dbb34bf590107/lib/appium_thor/helpers.rb#L188) 
 
 > def remove_non_ascii_from_cwd
 

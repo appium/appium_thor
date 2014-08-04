@@ -1,5 +1,6 @@
 #### v0.0.7 2014-08-04
 
+- [e36ab29](https://github.com/appium/appium_thor/commit/e36ab29971eb4ccc0b5b4527f23dbb34bf590107) Release 0.0.7
 - [b7cc396](https://github.com/appium/appium_thor/commit/b7cc3965b33020e599e83188efafbd946472f728) Release 0.0.7
 - [d8c695e](https://github.com/appium/appium_thor/commit/d8c695e344c2cddd315c644c0363176e01fac323) Fix delegators
 - [a68604a](https://github.com/appium/appium_thor/commit/a68604a1f76827fb3b4b3fcbedd8a1eacc818005) Fix delegators
