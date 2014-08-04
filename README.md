@@ -10,6 +10,7 @@ Appium Thor helpers for appium's gems (appium_lib, appium_capybara).
 ```ruby
 Appium::Thor::Config.set do
   gem_name     'appium_thor'
+  github_owner 'appium'
   github_name  'appium_thor'
   version_file 'lib/appium_thor/version.rb'
   docs_block do
@@ -17,6 +18,17 @@ Appium::Thor::Config.set do
   end
 end
 ```
+
+# Defaults
+
+      Option | Default
+          --:|:--
+gem_name     | must be provided
+github_owner | `appium`
+github_name  | gem_name
+version_file | `lib/#{gem_name}/version.rb`
+docs_block   | no docs are generated
+
 
 --
 
