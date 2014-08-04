@@ -1,3 +1,14 @@
+#### v0.0.7 2014-08-04
+
+- [b7cc396](https://github.com/appium/appium_thor/commit/b7cc3965b33020e599e83188efafbd946472f728) Release 0.0.7
+- [d8c695e](https://github.com/appium/appium_thor/commit/d8c695e344c2cddd315c644c0363176e01fac323) Fix delegators
+- [a68604a](https://github.com/appium/appium_thor/commit/a68604a1f76827fb3b4b3fcbedd8a1eacc818005) Fix delegators
+- [494e083](https://github.com/appium/appium_thor/commit/494e08359e8dcff04cf85d06b6a13ce6043f8c8b) Document default values
+- [5085c84](https://github.com/appium/appium_thor/commit/5085c849829a770e34e7e1f2a70a1dba61ef229d) Add default values
+- [2cea23d](https://github.com/appium/appium_thor/commit/2cea23dbc055006d17ceb8aef2f25341ea765aa4) Add github_owner
+- [e117e5d](https://github.com/appium/appium_thor/commit/e117e5dead6c67a9dc47fbf697358d91246ad414) Update README.md
+
+
 #### v0.0.6 2014-07-31
 
 - [b6659a4](https://github.com/appium/appium_thor/commit/b6659a4ea55c99cf68707f75d02ef29062760a00) Release 0.0.6
