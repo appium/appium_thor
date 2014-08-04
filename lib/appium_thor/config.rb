@@ -5,29 +5,9 @@ module Appium
 
       # Returns true if all options are truthy
       def validate
-        raise 'Must set gem_name, github_name, version_file' unless @gem_name && @github_name && @version_file
+        all_set = @gem_name && @github_name && @github_owner && @version_file
+        raise 'Must set gem_name, github_name, github_owner, version_file' unless all_set
         raise "version file doesn't exist #{@version_file}" unless File.exist?(@version_file)
-      end
-
-      # Returns option value if it's set otherwise
-      # sets the option value to string
-      def gem_name string=nil
-        return @gem_name if @gem_name
-        @gem_name = string
-      end
-
-      # Returns option value if it's set otherwise
-      # sets the option value to string
-      def github_name string=nil
-        return @github_name if @github_name
-        @github_name = string
-      end
-
-      # Returns option value if it's set otherwise
-      # sets the option value to string
-      def version_file string=nil
-        return @version_file if @version_file
-        @version_file = string
       end
 
       # block of code to execute that contains documentation
@@ -37,15 +17,20 @@ module Appium
         @docs_block = block
       end
 
-      # all config.rb options as a symbol array
-      def self.options
-        %w[gem_name github_name version_file docs_block].map(&:to_sym)
+      %w[gem_name github_name github_owner version_file].each do |option|
+        class_eval %Q(
+         def #{option} string=nil
+          return @#{option} if @#{option}
+          @#{option} = string
+         end
+        )
       end
 
       # Enables setting config in the Thorfile
       #
       # Appium::Thor::Config.set do
       #   gem_name     'appium_thor'
+      #   github_owner 'appium'
       #   github_name  'appium_thor'
       #   version_file 'path/to/version.rb'
       # end
