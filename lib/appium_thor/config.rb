@@ -27,12 +27,12 @@ module Appium
       end
 
       # Returns all options as symbols. Required for defining delegators in init.rb
-      def options
+      def self.options
         string_options + [:docs_block]
       end
 
       # the subset of options that operate on strings
-      def string_options
+      def self.string_options
         %w[gem_name github_name github_owner version_file].map(&:to_sym)
       end
 
