@@ -1,3 +1,12 @@
+#### v1.0.0 2015-06-19
+
+- [4938a6a](https://github.com/appium/appium_thor/commit/4938a6adcc98a5ebbca28b96280c66bce4ee0ff8) Release 1.0.0
+- [9d57bf8](https://github.com/appium/appium_thor/commit/9d57bf82f4ed60b07108ff8300eb9d51ce05474a) Fix undefined method '[]' for nil:NilClass
+- [dd63db2](https://github.com/appium/appium_thor/commit/dd63db2c1cda0bd585756b852d717260ac6ded70) Use https RubyGems link
+- [dfeacf5](https://github.com/appium/appium_thor/commit/dfeacf5c16d0db32130d77b809b3c2f966c74551) Document adding extra tasks (ex: spec task)
+- [dd9da91](https://github.com/appium/appium_thor/commit/dd9da91377d1bfc72de5dae167444f9dea18d150) Update README.md
+
+
 #### v0.0.7 2014-08-04
 
 - [e36ab29](https://github.com/appium/appium_thor/commit/e36ab29971eb4ccc0b5b4527f23dbb34bf590107) Release 0.0.7
