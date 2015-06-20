@@ -94,7 +94,12 @@ module Appium
         end
 
         tags = `git tag`.split "\n"
-        tags.sort! &tag_sort
+        begin
+          tags.sort! &tag_sort
+        rescue
+          $stderr.puts 'Skipping release notes (unable to sort)'
+          return
+        end
         pairs = []
         tags.each_index { |a| pairs.push tags[a] + '...' + tags[a+1] unless tags[a+1].nil? }
 
