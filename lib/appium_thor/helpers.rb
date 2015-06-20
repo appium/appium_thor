@@ -97,8 +97,9 @@ module Appium
         begin
           tags.sort! &tag_sort
         rescue
-          $stderr.puts 'Skipping release notes (unable to sort)'
-          return
+          message = 'Skipping release notes (unable to sort)'
+          $stderr.puts message
+          fail message
         end
         pairs = []
         tags.each_index { |a| pairs.push tags[a] + '...' + tags[a+1] unless tags[a+1].nil? }
@@ -181,10 +182,13 @@ module Appium
         sh "git commit --allow-empty -am 'Release #{version}'"
         sh 'git pull'
         sh "git tag #{tag_name}"
+
+        notes_failed = false
+
         # update notes now that there's a new tag
-        notes
+        notes rescue notes_failed = true
         docs
-        sh "git commit --allow-empty -am 'Update release notes'"
+        sh "git commit --allow-empty -am 'Update release notes'" unless notes_failed
         sh 'git push origin master'
         sh "git push origin #{tag_name}"
         _build_gem
