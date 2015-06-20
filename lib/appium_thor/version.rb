@@ -1,6 +1,6 @@
 module Appium
   module Thor
-    VERSION = '0.0.7' unless defined? ::Appium::Thor::VERSION
-    DATE    = '2014-08-04' unless defined? ::Appium::Thor::DATE
+    VERSION = '1.0.0' unless defined? ::Appium::Thor::VERSION
+    DATE    = '2015-06-19' unless defined? ::Appium::Thor::DATE
   end
 end
