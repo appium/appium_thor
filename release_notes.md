@@ -1,3 +1,9 @@
+#### v1.0.1 2015-06-19
+
+- [b9b553a](https://github.com/appium/appium_thor/commit/b9b553ae60ea2b1d435560aae5f08c7798b6f52d) Release 1.0.1
+- [ee9c212](https://github.com/appium/appium_thor/commit/ee9c212b01545a2e5d54c7d1ec3076a071a4ea35) Skip release notes on error
+
+
 #### v1.0.0 2015-06-19
 
 - [4938a6a](https://github.com/appium/appium_thor/commit/4938a6adcc98a5ebbca28b96280c66bce4ee0ff8) Release 1.0.0
