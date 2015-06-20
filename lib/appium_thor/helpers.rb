@@ -85,8 +85,11 @@ module Appium
       # Note that the first tag won't contain notes.
       def update_release_notes
         tag_sort = ->(tag1, tag2) do
-          tag1_numbers = tag1.match(/\.?v(\d+\.\d+\.\d+)$/)[1].split('.').map! { |n| n.to_i }
-          tag2_numbers = tag2.match(/\.?v(\d+\.\d+\.\d+)$/)[1].split('.').map! { |n| n.to_i }
+          tag1_numbers = tag1.match(/\.?v(\d+\.\d+\.\d+)$/)
+          # avoid indexing into a nil match. nil[1]
+          tag1_numbers = tag1_numbers[1].split('.').map! { |n| n.to_i } if tag1_numbers
+          tag2_numbers = tag2.match(/\.?v(\d+\.\d+\.\d+)$/)
+          tag2_numbers = tag2_numbers[1].split('.').map! { |n| n.to_i } if tag2_numbers
           tag1_numbers <=> tag2_numbers
         end
 
