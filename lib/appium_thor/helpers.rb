@@ -9,13 +9,13 @@ module Appium
       end
 
       # Returns true if the tag exists on the master branch.
-      def tag_exists tag_name
+      def tag_exists(tag_name)
         cmd = %Q(git branch -a --contains "#{tag_name}")
         POSIX::Spawn::Child.new(cmd).out.include? '* master'
       end
 
       # Runs command. Raises an exception if the command doesn't execute successfully.
-      def sh command
+      def sh(command)
         process = POSIX::Spawn::Child.new command
 
         unless process.success?
@@ -43,7 +43,7 @@ module Appium
       # x.y.z
       #
       # @param value [symbol] value is either :x, :y, or :z. Default is z.
-      def _bump value
+      def _bump(value)
         data = File.read version_file
 
         v_line = data.match version_rgx
@@ -131,12 +131,12 @@ module Appium
             # use first 7 chars to match GitHub
             comment = line.gsub(hex, '').strip
             next if comment == 'Update release notes'
-            new_data += "- [#{hex[0...7]}](https://github.com/#{github_owner}/#{github_name}/commit/#{hex}) #{comment}\n"
+            new_data.concat("- [#{hex[0...7]}](https://github.com/#{github_owner}/#{github_name}/commit/#{hex}) #{comment}\n")
           end
-          data  = new_data + "\n"
+          data  = "#{new_data}\n"
 
           # last pair is the released version.
-          notes += "#### #{tag_date[a]}\n\n" + data + "\n"
+          notes.concat("#### #{tag_date[a]}\n\n#{data}\n")
         end
 
         File.open('release_notes.md', 'w') { |f| f.write notes.to_s.strip }
