@@ -21,7 +21,7 @@ module Appium
 
       # block of code to execute that contains documentation
       # generation logic
-      def docs_block &block
+      def docs_bloc(&block)
         return @docs_block if @docs_block
         @docs_block = block
       end
@@ -53,7 +53,7 @@ module Appium
       #   github_name  'appium_thor'
       #   version_file 'path/to/version.rb'
       # end
-      def self.set &block
+      def self.set(&block)
         config = self.instance
         config.instance_eval &block
         config.init_and_validate
