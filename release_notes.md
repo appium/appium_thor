@@ -1,3 +1,9 @@
+#### v1.1.2 2018-11-12
+
+- [b04599e](https://github.com/appium/appium_thor/commit/b04599e462699083201e21ae6d7e4a0b4e90a1e9) Release 1.1.2
+- [6aee88a](https://github.com/appium/appium_thor/commit/6aee88afb1467b39bdfea06a9e5e8f3cad3a879d) fix gen doc issues
+
+
 #### v1.1.1 2018-11-12
 
 - [7e1ac01](https://github.com/appium/appium_thor/commit/7e1ac01f1398a10f22b36bd230ea8ea74937cbed) Release 1.1.1
