@@ -21,7 +21,7 @@ module Appium
 
       # block of code to execute that contains documentation
       # generation logic
-      def docs_bloc(&block)
+      def docs_block(&block)
         return @docs_block if @docs_block
         @docs_block = block
       end
