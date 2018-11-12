@@ -2,10 +2,12 @@
 class Default < Thor
   desc 'info', 'prints config info for this gem'
   def info
-    puts "     gem_name: #{gem_name}\n"    +
-         "  github_name: #{github_name}\n" +
-         " github_owner: #{github_owner}\n"
-         " version_file: #{version_file}"
+    puts <<-MSG
+    gem_name: #{gem_name}
+ github_name: #{github_name}
+github_owner: #{github_owner}
+version_file: #{version_file}
+    MSG
   end
 
   desc 'bumpx', 'Bump the x version number, set y & z to zero, update the date.'
