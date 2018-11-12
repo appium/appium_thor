@@ -1,4 +1,4 @@
-##### [_build_gem](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L6) 
+##### [_build_gem](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L6) 
 
 > def _build_gem
 
@@ -7,23 +7,23 @@ Runs gem build gemspec
 
 --
 
-##### [tag_exists](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L12) 
+##### [tag_exists](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L12) 
 
-> def tag_exists tag_name
+> def tag_exists(tag_name)
 
 Returns true if the tag exists on the master branch.
 
 --
 
-##### [sh](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L18) 
+##### [sh](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L18) 
 
-> def sh command
+> def sh(command)
 
 Runs command. Raises an exception if the command doesn't execute successfully.
 
 --
 
-##### [version_rgx](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L30) 
+##### [version_rgx](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L30) 
 
 > def version_rgx
 
@@ -31,7 +31,7 @@ Used to parse the version number from version_file
 
 --
 
-##### [version](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L35) 
+##### [version](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L35) 
 
 > def version
 
@@ -39,9 +39,9 @@ Returns the version number from version_file as a string
 
 --
 
-##### [_bump](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L46) 
+##### [_bump](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L46) 
 
-> def _bump value
+> def _bump(value)
 
 Updates the date and version in version_file.
 Prints the new version and date to the console.
@@ -55,7 +55,7 @@ __Parameters:__
 
 --
 
-##### [update_release_notes](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L86) 
+##### [update_release_notes](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L86) 
 
 > def update_release_notes
 
@@ -64,7 +64,7 @@ Note that the first tag won't contain notes.
 
 --
 
-##### [_install](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L149) 
+##### [_install](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L150) 
 
 > def _install
 
@@ -76,7 +76,7 @@ Installs the local gem. It's fast due to the flags
 
 --
 
-##### [_uninstall](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L156) 
+##### [_uninstall](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L157) 
 
 > def _uninstall
 
@@ -84,7 +84,7 @@ Uninstalls all versions of the gem
 
 --
 
-##### [_publish](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L167) 
+##### [_publish](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L168) 
 
 > def _publish
 
@@ -96,7 +96,7 @@ Publishes the gem to rubygems
 
 --
 
-##### [remove_non_ascii_from_cwd](https://github.com/appium/appium_thor/blob/b9b553ae60ea2b1d435560aae5f08c7798b6f52d/lib/appium_thor/helpers.rb#L196) 
+##### [remove_non_ascii_from_cwd](https://github.com/appium/appium_thor/blob/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2/lib/appium_thor/helpers.rb#L200) 
 
 > def remove_non_ascii_from_cwd
 

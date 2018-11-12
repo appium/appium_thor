@@ -1,3 +1,12 @@
+#### v1.1.0 2018-11-12
+
+- [5c7bcaf](https://github.com/appium/appium_thor/commit/5c7bcaff616abd2b0593f056a940d64f5b0ce3c2) Release 1.1.0
+- [9c39741](https://github.com/appium/appium_thor/commit/9c3974152191d983cad71cc60b412ff1788d973c) remove dependency status from readme since it was moved to gitlab
+- [94038c5](https://github.com/appium/appium_thor/commit/94038c50da0683c308dd251759d743190cbe53bc) Merge pull request #3 from KazuCocoa/bump-ruby-version
+- [3a30951](https://github.com/appium/appium_thor/commit/3a309515c46fec8424bacdcc929e6c1e56b50066) bump ruby version
+- [80ec9cd](https://github.com/appium/appium_thor/commit/80ec9cdd97fc1dd2d7d857674ab2629571cd9fea) Avoid empty notes commit on failure
+
+
 #### v1.0.1 2015-06-19
 
 - [b9b553a](https://github.com/appium/appium_thor/commit/b9b553ae60ea2b1d435560aae5f08c7798b6f52d) Release 1.0.1
@@ -45,9 +54,5 @@
 
 - [b0f4217](https://github.com/appium/appium_thor/commit/b0f42170c7b7df3befa9651647ea8c65ecd86710) Release 0.0.4
 - [68f6e7b](https://github.com/appium/appium_thor/commit/68f6e7b4d641017eee1123fbcc9872940adf37b8) Fix update_release_notes
-
-
-#### v0.0.3 2014-07-31
-
 - [71b4199](https://github.com/appium/appium_thor/commit/71b419998ce835cf1e722563cd9ba99d89da6fb0) Release 0.0.3
 - [9904612](https://github.com/appium/appium_thor/commit/99046121f53f42bebb0cea4971f89b91c358da22) Testing release notes
