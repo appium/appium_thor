@@ -17,15 +17,16 @@ module Appium
 
         # skip class vars
         if sig.start_with?('@@') ||
-          # skip methods marked private
-          obj.tag('private') ||
-          # skip date and version from version.rb
-          obj.name.match(/DATE|VERSION/)
+            # skip methods marked private
+            obj.tag('private') ||
+            # skip date and version from version.rb
+            obj.name.match(/DATE|VERSION/)
+
           return out
         end
 
         method_path = obj.file.split('/lib/').last
-        os = method_path.downcase.match /ios|android/
+        os = method_path.downcase.match(/ios|android/) || 'common'
         out.concat("##### [#{obj.name.to_s}](https://github.com/#{github_owner}/#{github_name}/blob/#{last_sha}/lib/#{method_path}#L#{obj.line}) #{os}\n\n")
         out.concat("> #{obj.signature}\n\n")
         out.concat("#{obj.docstring}\n\n")
@@ -34,19 +35,19 @@ module Appium
         indent = space 5
         params = obj.tags.select { |tag| tag.tag_name == 'param' }
         unless params.empty?
-          out.concat("__Parameters:__\n\n")
+          out.concat('__Parameters:__\n\n')
           params.each do |param|
-            out.concat("#{indent}[#{param.types.join ', '}] ")
+            out.concat("#{indent}[#{param.types.join(', ') unless param.types.nil?}] ")
             out.concat("#{param.name} - #{param.text}\n\n")
           end
         end
 
         ret = obj.tag 'return'
         if ret
-          out.concat("__Returns:__\n\n")
-          out.concat("#{indent}[#{ret.types.join ', '}] #{ret.text}\n\n")
+          out.concat('__Returns:__\n\n')
+          out.concat("#{indent}[#{ret.types.join(', ') unless ret.types.nil?}] #{ret.text}\n\n")
         end
-        out.concat("--\n\n")
+        out.concat('--\n\n')
 
         out
       end
