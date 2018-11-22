@@ -1,3 +1,9 @@
+#### v1.1.4 2018-11-22
+
+- [1758415](https://github.com/appium/appium_thor/commit/1758415f0676af855b8a522e647e1d5eebfc71ad) Release 1.1.4
+- [4adda4f](https://github.com/appium/appium_thor/commit/4adda4f099e75d4c97cdd69a5db69bfb029fd390) add new line
+
+
 #### v1.1.3 2018-11-22
 
 - [d264716](https://github.com/appium/appium_thor/commit/d264716b17dd0bca5ca704712084b7a5500d9d4a) Release 1.1.3

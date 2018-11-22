@@ -1,4 +1,4 @@
-##### [_build_gem](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L6) common
+##### [_build_gem](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L6) common
 
 > def _build_gem
 
@@ -7,7 +7,7 @@ Runs gem build gemspec
 
 --
 
-##### [tag_exists](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L12) common
+##### [tag_exists](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L12) common
 
 > def tag_exists(tag_name)
 
@@ -15,7 +15,7 @@ Returns true if the tag exists on the master branch.
 
 --
 
-##### [sh](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L18) common
+##### [sh](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L18) common
 
 > def sh(command)
 
@@ -23,7 +23,7 @@ Runs command. Raises an exception if the command doesn't execute successfully.
 
 --
 
-##### [version_rgx](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L30) common
+##### [version_rgx](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L30) common
 
 > def version_rgx
 
@@ -31,7 +31,7 @@ Used to parse the version number from version_file
 
 --
 
-##### [version](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L35) common
+##### [version](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L35) common
 
 > def version
 
@@ -39,7 +39,7 @@ Returns the version number from version_file as a string
 
 --
 
-##### [_bump](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L46) common
+##### [_bump](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L46) common
 
 > def _bump(value)
 
@@ -55,7 +55,7 @@ __Parameters:__
 
 --
 
-##### [update_release_notes](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L86) common
+##### [update_release_notes](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L86) common
 
 > def update_release_notes
 
@@ -64,7 +64,7 @@ Note that the first tag won't contain notes.
 
 --
 
-##### [_install](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L150) common
+##### [_install](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L150) common
 
 > def _install
 
@@ -76,7 +76,7 @@ Installs the local gem. It's fast due to the flags
 
 --
 
-##### [_uninstall](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L157) common
+##### [_uninstall](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L157) common
 
 > def _uninstall
 
@@ -84,7 +84,7 @@ Uninstalls all versions of the gem
 
 --
 
-##### [_publish](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L168) common
+##### [_publish](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L168) common
 
 > def _publish
 
@@ -96,7 +96,7 @@ Publishes the gem to rubygems
 
 --
 
-##### [remove_non_ascii_from_cwd](https://github.com/appium/appium_thor/blob/d264716b17dd0bca5ca704712084b7a5500d9d4a/lib/appium_thor/helpers.rb#L200) common
+##### [remove_non_ascii_from_cwd](https://github.com/appium/appium_thor/blob/1758415f0676af855b8a522e647e1d5eebfc71ad/lib/appium_thor/helpers.rb#L200) common
 
 > def remove_non_ascii_from_cwd
 
