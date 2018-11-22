@@ -44,7 +44,7 @@ module Appium
 
         ret = obj.tag 'return'
         if ret
-          out.concat('__Returns:__\n\n')
+          out.concat("__Returns:__\n\n")
           out.concat("#{indent}[#{ret.types.join(', ') unless ret.types.nil?}] #{ret.text}\n\n")
         end
         out.concat("--\n\n")
