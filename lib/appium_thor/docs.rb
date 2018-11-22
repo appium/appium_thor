@@ -35,7 +35,7 @@ module Appium
         indent = space 5
         params = obj.tags.select { |tag| tag.tag_name == 'param' }
         unless params.empty?
-          out.concat('__Parameters:__\n\n')
+          out.concat("__Parameters:__\n\n")
           params.each do |param|
             out.concat("#{indent}[#{param.types.join(', ') unless param.types.nil?}] ")
             out.concat("#{param.name} - #{param.text}\n\n")
@@ -47,7 +47,7 @@ module Appium
           out.concat('__Returns:__\n\n')
           out.concat("#{indent}[#{ret.types.join(', ') unless ret.types.nil?}] #{ret.text}\n\n")
         end
-        out.concat('--\n\n')
+        out.concat("--\n\n")
 
         out
       end
