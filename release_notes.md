@@ -1,3 +1,10 @@
+#### v1.1.3 2018-11-22
+
+- [d264716](https://github.com/appium/appium_thor/commit/d264716b17dd0bca5ca704712084b7a5500d9d4a) Release 1.1.3
+- [b35fc7b](https://github.com/appium/appium_thor/commit/b35fc7bc84151def687c430f91948a1dc3509dbc) Merge pull request #4 from KazuCocoa/fix-newline
+- [fc48890](https://github.com/appium/appium_thor/commit/fc4889026ae92b828ce8be98ad67a5a46dca2af3) fix newline
+
+
 #### v1.1.2 2018-11-12
 
 - [b04599e](https://github.com/appium/appium_thor/commit/b04599e462699083201e21ae6d7e4a0b4e90a1e9) Release 1.1.2
