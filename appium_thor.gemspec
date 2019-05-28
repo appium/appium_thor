@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'redcarpet', '~> 3.1', '>= 3.1.2'
   s.add_runtime_dependency 'posix-spawn', '~> 0.3', '>= 0.3.8'
-  s.add_runtime_dependency 'yard', '~> 0.8', '>= 0.8.7.4'
+  s.add_runtime_dependency 'yard', '~> 0.9.11'
 
   s.files = `git ls-files`.split "\n"
 end
