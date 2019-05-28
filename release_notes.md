@@ -1,3 +1,10 @@
+#### v1.1.5 2019-05-28
+
+- [ab32d98](https://github.com/appium/appium_thor/commit/ab32d98572d23a69e17355fb831485c3fd51405d) Release 1.1.5
+- [c50ac40](https://github.com/appium/appium_thor/commit/c50ac40a5b5a8fd1533dc1a177130a72dc4e69ff) Merge pull request #5 from KazuCocoa/bump-yard
+- [8711b02](https://github.com/appium/appium_thor/commit/8711b02cd57602eea636f4df0c97bd24fdd5e8a8) update yard
+
+
 #### v1.1.4 2018-11-22
 
 - [1758415](https://github.com/appium/appium_thor/commit/1758415f0676af855b8a522e647e1d5eebfc71ad) Release 1.1.4
