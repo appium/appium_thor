@@ -192,7 +192,7 @@ module Appium
         sh 'git push origin master'
         sh "git push origin #{tag_name}"
         _build_gem
-        sh "gem push #{gem_name}-#{version}.gem"
+        puts "Please run 'gem push #{gem_name}-#{version}.gem'"
       end
 
       # Remove non-ascii bytes from all rb files in the current working directory.
