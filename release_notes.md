@@ -1,3 +1,9 @@
+#### v1.1.6 2019-11-08
+
+- [014fa19](https://github.com/appium/appium_thor/commit/014fa19e5a2cf8d2d8d85fbd3d139b9c7d67fb50) Release 1.1.6
+- [7cde986](https://github.com/appium/appium_thor/commit/7cde98641bef47ed92ecb5f5be03418283175bc6) do not run push
+
+
 #### v1.1.5 2019-05-28
 
 - [ab32d98](https://github.com/appium/appium_thor/commit/ab32d98572d23a69e17355fb831485c3fd51405d) Release 1.1.5
