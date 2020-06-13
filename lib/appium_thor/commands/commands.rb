@@ -6,7 +6,7 @@ class Default < Thor
     gem_name: #{gem_name}
  github_name: #{github_name}
 github_owner: #{github_owner}
-      branch: #{target_branch}
+      branch: #{branch}
 version_file: #{version_file}
     MSG
   end
