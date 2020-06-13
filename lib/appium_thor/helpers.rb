@@ -167,7 +167,7 @@ module Appium
       # Publishes the gem to rubygems
       def _publish
         unless `git branch`.include? "* #{branch}"
-          puts 'Master branch required to release.'
+          puts "'#{branch}' branch required to release."
           exit!
         end
 
