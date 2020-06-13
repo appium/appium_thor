@@ -11,7 +11,7 @@ module Appium
       # Returns true if the tag exists on the master branch.
       def tag_exists(tag_name)
         cmd = %Q(git branch -a --contains "#{tag_name}")
-        POSIX::Spawn::Child.new(cmd).out.include? '* master'
+        POSIX::Spawn::Child.new(cmd).out.include? "* #{branch}"
       end
 
       # Runs command. Raises an exception if the command doesn't execute successfully.
@@ -166,7 +166,7 @@ module Appium
       # Builds the gem
       # Publishes the gem to rubygems
       def _publish
-        unless `git branch`.include? '* master'
+        unless `git branch`.include? "* #{branch}"
           puts 'Master branch required to release.'
           exit!
         end
@@ -189,7 +189,7 @@ module Appium
         notes rescue notes_failed = true
         docs
         sh "git commit --allow-empty -am 'Update release notes'" unless notes_failed
-        sh 'git push origin master'
+        sh "git push origin #{branch}"
         sh "git push origin #{tag_name}"
         _build_gem
         puts "Please run 'gem push #{gem_name}-#{version}.gem'"

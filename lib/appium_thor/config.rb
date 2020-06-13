@@ -11,6 +11,8 @@ module Appium
           @version_file ||= "lib/#{@gem_name}/version.rb"
         end
 
+        @branch ||= 'master'
+
         @github_owner ||= 'appium'
 
         # ensure all options are set
@@ -33,7 +35,7 @@ module Appium
 
       # the subset of options that operate on strings
       def self.string_options
-        %w[gem_name github_name github_owner version_file].map(&:to_sym)
+        %w[gem_name github_name github_owner branch version_file].map(&:to_sym)
       end
 
       string_options.each do |option|
@@ -51,6 +53,7 @@ module Appium
       #   gem_name     'appium_thor'
       #   github_owner 'appium'
       #   github_name  'appium_thor'
+      #        branch  'master'
       #   version_file 'path/to/version.rb'
       # end
       def self.set(&block)
