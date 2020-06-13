@@ -1,3 +1,9 @@
+#### v1.2.0 2020-06-14
+
+- [5c7025a](https://github.com/appium/appium_thor/commit/5c7025a14e9a6dba1ff0f69b733983d965e9c2ee) Release 1.2.0
+- [d334d3a](https://github.com/appium/appium_thor/commit/d334d3af298f2bde9dd828d015ac8fd6a096a8e4) feat: Allow to customise the target branch (#7)
+
+
 #### v1.1.6 2019-11-08
 
 - [014fa19](https://github.com/appium/appium_thor/commit/014fa19e5a2cf8d2d8d85fbd3d139b9c7d67fb50) Release 1.1.6
