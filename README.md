@@ -14,6 +14,7 @@ Appium::Thor::Config.set do
   gem_name     'appium_thor'
   github_owner 'appium'
   github_name  'appium_thor'
+       branch  'master'
   version_file 'lib/appium_thor/version.rb'
   docs_block do
     run 'docs/helpers_docs.md', globs('/lib/appium_thor/helpers.rb')
@@ -35,14 +36,17 @@ end
 
 # Defaults
 
-      Option | Default
-          --:|:--
-gem_name     | must be provided
-github_owner | `appium`
-github_name  | `#{gem_name}`
-version_file | `lib/#{gem_name}/version.rb`
-docs_block   | no docs are generated
+|Option | Default|
+|---:|:---|
+|gem_name     | must be provided|
+|github_owner | `appium`|
+|github_name  | `#{gem_name}`|
+|branch       | `master`|
+|version_file | `lib/#{gem_name}/version.rb`|
+|docs_block   | no docs are generated|
 
+`branch` customises the target branch to push changes.
+Defaults to `master`
 
 --
 
