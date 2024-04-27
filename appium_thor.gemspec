@@ -8,11 +8,10 @@ Gem::Specification.new do |s|
   s.date          = Appium::Thor::DATE
   s.license       = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
   s.description   = s.summary = 'Thor tasks for Appium gems.'
-  s.authors       = s.email = ['code@bootstraponline.com']
+  s.authors       = ['code@bootstraponline.com', 'Kazuaki Matsuo']
+  s.email         = %w(code@bootstraponline.com fly.49.89.over@gmail.com)
   s.homepage      = 'https://github.com/appium/appium_thor'
   s.require_paths = ['lib']
-
-  s.add_runtime_dependency 'redcarpet', '~> 3.1', '>= 3.1.2'
 
   s.files = `git ls-files`.split "\n"
 end

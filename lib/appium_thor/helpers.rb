@@ -55,10 +55,11 @@ module Appium
         new_num     = old_num.split('.')
         new_num[-1] = new_num[-1].to_i + 1
 
-        if value == :y
+        case value
+        when  :y
           new_num[-1] = 0 # x.y.Z -> x.y.0
           new_num[-2] = new_num[-2].to_i + 1 # x.Y -> x.Y+1
-        elsif value == :x
+        when :x
           new_num[-1] = 0 # x.y.Z -> x.y.0
           new_num[-2] = 0 # x.Y.z -> x.0.z
           new_num[-3] = new_num[-3].to_i + 1
