@@ -8,11 +8,10 @@ module Appium
       end
 
       # Returns true if the tag exists on the master branch.
-      def tag_exists(tag_name)
-        cmd = %Q(git branch -a --contains "#{tag_name}")
-        stdout, status = Open3.capture2(cmd)
-        stdout.include? "* #{branch}"
-
+      def tag_exists? tag_name
+        cmd = %Q(git rev-parse --verify refs/tags/"#{tag_name}")
+        _, _, status = Open3.capture3(cmd)
+        status.success?
       end
 
       # Runs command. Raises an exception if the command doesn't execute successfully.
@@ -176,7 +175,7 @@ module Appium
 
         # Commit then pull before pushing.
         tag_name = "v#{version}"
-        raise 'Tag already exists!' if tag_exists tag_name
+        raise 'Tag already exists!' if tag_exists? tag_name
 
         # Commit then pull before pushing.
         sh "git commit --allow-empty -am 'Release #{version}'"
@@ -189,7 +188,7 @@ module Appium
         notes rescue notes_failed = true
         sh "git commit --allow-empty -am 'Update release notes'" unless notes_failed
         sh "git push origin #{branch}"
-        # sh "git push origin #{tag_name}"
+        sh "git push origin #{tag_name}"
         _build_gem
         puts "Please run 'gem push #{gem_name}-#{version}.gem'"
       end
