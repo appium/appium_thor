@@ -55,11 +55,6 @@ version_file: #{version_file}
     _install
   end
 
-  desc 'docs', 'Update docs'
-  def docs
-    instance_eval &docs_block if docs_block
-  end
-
   desc 'notes', 'Update release notes'
   def notes
     update_release_notes
