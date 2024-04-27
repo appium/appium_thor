@@ -1,3 +1,11 @@
+#### v2.0.0 2024-04-26
+
+- [e83d36e](https://github.com/appium/appium_thor/commit/e83d36e65c48dcfc71b00d28837a4c57517cc6b2) Release 2.0.0
+- [021199b](https://github.com/appium/appium_thor/commit/021199b3bb179432cac93709292a275470f4bca7) chore: remove posix-spawn
+- [11848db](https://github.com/appium/appium_thor/commit/11848db549003ba9b267622eb3e2677c4b9a004d) chore: use ruby 3+
+- [3b3cf1d](https://github.com/appium/appium_thor/commit/3b3cf1d278ec18923875c5469e4e1da31df92472) feat: remove docs (#8)
+
+
 #### v1.2.0 2020-06-14
 
 - [5c7025a](https://github.com/appium/appium_thor/commit/5c7025a14e9a6dba1ff0f69b733983d965e9c2ee) Release 1.2.0
