@@ -1,7 +1,7 @@
 require_relative 'lib/appium_thor/version'
 
 Gem::Specification.new do |s|
-  s.required_ruby_version = '>= 2.2'
+  s.required_ruby_version = '>= 3.0'
 
   s.name          = 'appium_thor'
   s.version       = Appium::Thor::VERSION
