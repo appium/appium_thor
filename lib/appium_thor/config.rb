@@ -21,16 +21,9 @@ module Appium
         raise "version file doesn't exist #{@version_file}" unless File.exist?(@version_file)
       end
 
-      # block of code to execute that contains documentation
-      # generation logic
-      def docs_block(&block)
-        return @docs_block if @docs_block
-        @docs_block = block
-      end
-
       # Returns all options as symbols. Required for defining delegators in init.rb
       def self.options
-        string_options + [:docs_block]
+        string_options
       end
 
       # the subset of options that operate on strings

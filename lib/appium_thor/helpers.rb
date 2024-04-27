@@ -11,19 +11,20 @@ module Appium
       # Returns true if the tag exists on the master branch.
       def tag_exists(tag_name)
         cmd = %Q(git branch -a --contains "#{tag_name}")
-        POSIX::Spawn::Child.new(cmd).out.include? "* #{branch}"
+        stdout, status = Open3.capture2(cmd)
+        stdout.include? "* #{branch}"
+
       end
 
       # Runs command. Raises an exception if the command doesn't execute successfully.
       def sh(command)
-        process = POSIX::Spawn::Child.new command
+        stdout, stderr, status = Open3.capture3(command)
 
-        unless process.success?
-          raise "Command #{command} failed. out: #{process.out}\nerr: #{process.err}"
+        unless status.success?
+          raise "Command #{command} failed. out: #{stdout}\nerr: #{stderr}"
         end
 
-        out = process.out
-        out ? out.strip : out
+        stdout.strip
       end
 
       # Used to parse the version number from version_file
@@ -187,7 +188,6 @@ module Appium
 
         # update notes now that there's a new tag
         notes rescue notes_failed = true
-        docs
         sh "git commit --allow-empty -am 'Update release notes'" unless notes_failed
         sh "git push origin #{branch}"
         sh "git push origin #{tag_name}"

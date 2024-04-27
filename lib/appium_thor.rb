@@ -5,12 +5,10 @@ require 'fileutils'
 
 # gems
 require 'rubygems'
-require 'yard'        # docs.rb
 require 'posix-spawn' # helpers.rb
 require 'date'        # helpers.rb Date.today
 
 # internal
-require_relative 'appium_thor/docs'
 require_relative 'appium_thor/helpers'
 require_relative 'appium_thor/version'
 require_relative 'appium_thor/config'
