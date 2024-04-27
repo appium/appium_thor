@@ -2,7 +2,6 @@
 class Default < Thor
   extend Forwardable
   include Appium::Thor::Helpers
-  include Appium::Thor::Docs
 
   # For each possible option method, delegate calls to the config instance
   no_commands do

@@ -2,6 +2,7 @@
 require 'forwardable' # commands.rb
 require 'singleton'   # config.rb
 require 'fileutils'
+require 'open3'
 
 # gems
 require 'rubygems'

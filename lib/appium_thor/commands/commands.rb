@@ -64,4 +64,8 @@ version_file: #{version_file}
   def byte
     remove_non_ascii_from_cwd
   end
+
+  def self.exit_on_failure?
+    true
+  end
 end
