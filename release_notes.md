@@ -1,3 +1,9 @@
+#### v2.0.5 2024-04-27
+
+- [31e6d74](https://github.com/appium/appium_thor/commit/31e6d7494e0402604e3ce8b10d426684e05c16a9) Release 2.0.5
+- [bbf0b07](https://github.com/appium/appium_thor/commit/bbf0b07eecbb11e9d02e5b772ec3601f140f44f4) chore: cleanup further (#9)
+
+
 #### v2.0.4 2024-04-26
 
 - [990035d](https://github.com/appium/appium_thor/commit/990035d4a2c9dfab8757211b47d2cdf6bc5a1828) Release 2.0.4
