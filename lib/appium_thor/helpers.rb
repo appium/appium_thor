@@ -189,7 +189,7 @@ module Appium
         notes rescue notes_failed = true
         sh "git commit --allow-empty -am 'Update release notes'" unless notes_failed
         sh "git push origin #{branch}"
-        sh "git push origin #{tag_name}"
+        # sh "git push origin #{tag_name}"
         _build_gem
         puts "Please run 'gem push #{gem_name}-#{version}.gem'"
       end
