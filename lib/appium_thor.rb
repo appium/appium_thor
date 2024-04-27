@@ -5,7 +5,6 @@ require 'fileutils'
 
 # gems
 require 'rubygems'
-require 'posix-spawn' # helpers.rb
 require 'date'        # helpers.rb Date.today
 
 # internal
