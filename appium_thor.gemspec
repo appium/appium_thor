@@ -13,5 +13,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/appium/appium_thor'
   s.require_paths = ['lib']
 
+  s.add_runtime_dependency 'thor', '>= 0.19', '< 2.0'
+
   s.files = `git ls-files`.split "\n"
 end
