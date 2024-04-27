@@ -4,7 +4,6 @@ module Appium
       # Sets the permissions on the gem credentials
       # Runs gem build gemspec
       def _build_gem
-        `chmod 0600 ~/.gem/credentials`
         sh "gem build #{gem_name}.gemspec"
       end
 
