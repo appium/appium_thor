@@ -1,3 +1,8 @@
+#### v2.0.6 2024-04-27
+
+- [a135b43](https://github.com/appium/appium_thor/commit/a135b43f742cb1aa7acc2269502b010fed518b29) Release 2.0.6
+
+
 #### v2.0.5 2024-04-27
 
 - [31e6d74](https://github.com/appium/appium_thor/commit/31e6d7494e0402604e3ce8b10d426684e05c16a9) Release 2.0.5
