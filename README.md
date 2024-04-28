@@ -1,7 +1,6 @@
 # appium_thor
 
-[![Gem Version](https://badge.fury.io/rb/appium_thor.svg)](https://rubygems.org/gems/appium_thor)
-
+[![Gem Version](https://badge.fury.io/rb/appium_thor.svg)](https://badge.fury.io/rb/appium_thor)
 
 Appium Thor helpers for appium's gems (appium_lib, appium_capybara).
 
