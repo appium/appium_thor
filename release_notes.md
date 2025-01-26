@@ -1,3 +1,10 @@
+#### v2.1.0 2025-01-25
+
+- [52ccc71](https://github.com/appium/appium_thor/commit/52ccc7110becccfe7d91d1333ac25ae0c2298117) Release 2.1.0
+- [74d2946](https://github.com/appium/appium_thor/commit/74d2946fe8cfbf5af710785cbff3be1dfc45a2f1) feat: update ruby version
+- [9049fdf](https://github.com/appium/appium_thor/commit/9049fdf6272c9f68fe3f8f19a01b3a4768c111a6) docs: update badge
+
+
 #### v2.0.6 2024-04-27
 
 - [a135b43](https://github.com/appium/appium_thor/commit/a135b43f742cb1aa7acc2269502b010fed518b29) Release 2.0.6
