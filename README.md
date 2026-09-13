@@ -1,5 +1,9 @@
 # appium_thor
 
+> **Deprecated — archived and no longer maintained.**
+> There is no direct replacement. Configure your release process using tools
+> such as GitHub Actions as needed. Existing gem versions remain available.
+
 [![Gem Version](https://badge.fury.io/rb/appium_thor.svg)](https://badge.fury.io/rb/appium_thor)
 
 Appium Thor helpers for appium's gems (appium_lib, appium_capybara).

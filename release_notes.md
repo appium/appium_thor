@@ -1,3 +1,8 @@
+#### v2.1.1
+
+- Final maintenance notice: deprecated and archived, with no direct replacement.
+- Add a post-install message. Existing tasks and dependencies are unchanged.
+
 #### v2.1.0 2025-01-25
 
 - [52ccc71](https://github.com/appium/appium_thor/commit/52ccc7110becccfe7d91d1333ac25ae0c2298117) Release 2.1.0
